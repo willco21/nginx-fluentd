@@ -16,8 +16,8 @@ RUN apk add openssl \
   && entrykit --symlink
 
 RUN apk add nginx
-ADD ./nginx.conf /etc/nginx/nginx.conf
-ADD index.html /index.html
+ADD nginx/nginx.conf /etc/nginx/nginx.conf
+ADD nginx/index.html /index.html
 RUN mkdir -p /run/nginx
 
 ENTRYPOINT [ \

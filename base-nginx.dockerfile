@@ -52,8 +52,8 @@ EXPOSE 24224 5140
 
 #USER fluent
 
-ADD ./nginx.conf /etc/nginx/nginx.conf
-ADD index.html /index.html
+ADD nginx/nginx.conf /etc/nginx/nginx.conf
+ADD nginx/index.html /index.html
 
 ENTRYPOINT [ \
   "codep", \
